@@ -310,6 +310,13 @@ aside{
 .clases-article p{
 padding: 15px 0;
 }
+.class-list:hover{
+    background-color: var(--topdark);
+color: var(--primary);
+}
+.active{
+    color: var(--primary);
+}
 /* table */
 .table{
     background: url(../media/schedule-bg.jpg);
