@@ -1,0 +1,400 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* my reset */
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.border-none{
+    border: none;
+}
+.block{
+    display: block;
+}
+/* variables */
+:root{
+    --primary: rgb(237,85,58);
+    --secondary: rgb(185,185,185);
+    --topdark: black;
+}
+li a:hover{
+    color: var(--primary);
+}
+.btn-hover a:hover{
+    background-color: var(--topdark);
+}
+/* general */
+/* container */
+.container{
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 32px;
+    margin: 0 auto;
+}
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Stick No Bills', sans-serif;
+}
+/* flex */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.display-flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-btm{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-start{
+    justify-content: flex-start;
+}
+
+/* flex-width */
+.flex-20{
+    flex: 0 1 20%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.flex-45{
+    flex: 0 1 45%;
+}
+.flex-50{
+    flex: 0 1 50%;
+}
+.flex-100{
+    flex: 0 1 100%;
+}
+.flex-60{
+    flex: 0 1 60%;
+}
+.grow{
+    flex: 1 1 auto;
+}
+/* text */
+.uppercase{
+    text-transform: uppercase;
+}
+.captilize{
+    text-transform: capitalize;
+}
+.text-center{
+    text-align: center;
+}
+/* postion */
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+.width-100{
+    width: 100%;
+}
+.width-30{
+    width: 30%;
+}
+.width-35{
+    width: 35%;
+}
+.width-50{
+    width: 50%;
+}
+.width-48{
+    width: 48%;
+}
+.width-90{
+    width: 90%;
+}
+.width-25{
+    width: 25%;
+}
+.width-70{
+    width: 70%;
+}
+.font-25{
+    font-size: 25px;
+}
+.font-40{
+    font-size: 40px;
+}
+.font-60{
+    font-size: 60px;
+}
+.font-70{
+    font-size: 70px;
+}
+.font-80{
+    font-size: 80px;
+}
+.white{
+    color: white;
+}
+.text-start{
+    text-align: start;
+}
+.padding-4{
+    padding: 40px 0;
+}
+.padding-2{
+    padding: 20px 0;
+}
+.padding-1{
+    padding: 10px 0;
+}
+.padding-8{
+    padding: 80px 0;
+}
+
+ /* custom */
+ header{
+     background-color: rgb(0, 0, 0, 0.5);
+     padding: 10px 0;
+     left: 0;
+     right: 0;
+     z-index: 1;
+ }
+
+.navbar a{
+    color: white;
+}
+h1{
+    font-size: 30px;
+    font-size: 800;
+    color: white;
+}
+b{
+    color: var(--primary);
+}
+.btn{
+    background-color: var(--primary);
+    padding: 8px;
+}
+
+/* hero-section */
+.overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 10px;
+    position: absolute;
+}
+.hero-info{
+    margin-top: 300px;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+/* program-section */
+.program{
+    padding: 70px 0;
+}
+h3{
+    font-size: 25px;
+}
+p{
+    font-size: 12px;
+    font-weight: 200;
+    color: var(--secondary);
+}
+.dumble article{
+    padding-left: 20px;
+}
+.dumble{
+    padding: 30px 0;
+}
+.dumble div{
+    padding: 25px 0;
+}
+/* gyn-machine */
+.think-today{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 100px;
+}
+.think-today h3{
+    letter-spacing: 5px;
+}
+.think-today p{
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+/* Our-clases */
+aside{
+    width: 35%;
+}
+.class-list{
+    width: 90%;
+    box-shadow: 0 0 5px 0 gray;
+    margin-top: 20px;
+    padding: 15px 0;
+}
+.class-list div{
+    width: 90%;
+}
+.list-btn{
+    color: white;
+    background-color: var(--primary);
+}
+.clases-article p{
+padding: 15px 0;
+}
+.class-list:hover{
+    background-color: var(--topdark);
+color: var(--primary);
+}
+.active{
+    color: var(--primary);
+}
+/* table */
+.table{
+    background: url(../media/schedule-bg.jpg);
+    padding: 120px 0;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+tr td{
+    border: 1px solid white;
+}
+td{
+    padding: 30px;
+}
+caption{
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+/* trainer */
+.trainer-div{
+    padding: 50px 0;
+}
+.trainer-info{
+    box-shadow: 0 0 5px 0 gray;
+}
+.trainer-info div{
+    margin: 0 auto;
+    padding: 30px 10px;
+}
+.trainer-info p{
+    padding: 15px 0;
+}
+.trainer-info a{
+    color: rgb(35,45,56);
+}
+/* map-section */
+.map-img{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+}
+form{
+    padding: 40px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    margin-top: 45px;
+    margin-left: 80px;
+   
+   width: 80%;
+   
+}
+.subject{
+    padding: 10px 0;
+}
+input, textarea{
+    padding: 10px 5px;
+}
+.form-btn::placeholder{
+    color: white;
+    text-align: center;
+}
+.form-btn{
+    border: none;
+    outline: none;
+    margin-top: 20px;
+}
+.parent{
+    margin-left: 40px;
+}
+/* footer */
+footer{
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
